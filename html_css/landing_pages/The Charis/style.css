@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #e3e8e4;
+    --primary-color:#363636;
+    --main-font: "Playfair Display", serif;
+}
+
+
+/* NAV SECTION */
+nav{
+    Display:flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 10px ;
+}
+
+ul li{
+    display: inline;
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    margin-left: 4rem;
+}
+
+a:hover{
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom:8px ;
+}
+.btn-fill{
+    padding:10px 30px;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 100px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+.btn-outline{
+    background: transparent;
+    border:none ;
+    margin-left: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* NAV SECTION */
+
+/* HEADER SECTION */
+header{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-container{
+    margin-left: 6rem;
+}
+.main-headings{
+    font-size: 4rem;
+    font-family: var(--main-font);
+    color: #0000004f;
+    margin-bottom: 2rem;
+}
+span{
+    color: black;
+    
+}
+.primary-headings{
+    max-width: 500px;
+    font-family: sans-serif;
+    line-height: 25px;
+    margin-bottom: 5px;
+}
+.img-container{
+    width: 500px;
+    height: 500px;
+    background: var(--main-color);
+    border-radius: 100%;
+
+}
+.img-container img{
+    width: 400px;
+    height: 500px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+/* HEADER SECTION */
+
+
+/* POPULARITY SECTION  */
+.popularity{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+
+    
+}
+.popularity div{
+    margin-right: 5rem;
+}
+.popularity div h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #34343e;
+    font-family:var(--main-font) ;
+}
+
+.popularity div p{
+    color: #34343e;
+    font-family:sans-serif ;
+}
+/* POPULARITY SECTION  */
+
+
+/* PRODUCT SECTION */
+
+.products-headings{
+    text-align: center;
+    margin-top: 10rem ;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+    color: #0000004f;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.product-img-layer{
+    background-color: var(--main-color);
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    padding: 20px;
+}
+.product .product-img-layer .img{
+    width: 200px;
+    height: 200px;
+    ;
+
+}
+.product .product-img-layer .img-one{
+    background: url(img-one-removebg-preview.png)  ;
+    background-size: cover;
+    background-position: center;
+    transform: translateX(-20px);
+}
+.product .product-img-layer .img-two{
+    background: url(chair-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+}
+.product .product-img-layer .img-three{
+    background: url(img-two-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+.product-content
+{
+    background: var(--primary-color);
+    padding: 27px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+}
+
+.product-content .product-name{
+    font-family:sans-serif ;
+    margin-bottom: 10px;
+
+}
+.b-container{
+    text-align: center;
+
+}
+.b-container button{
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* PRODUCT SECTION */
+
+/* WHY CHOOSE US SECTION */
+.why-us{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.why-us .img-layer{
+    width: 400px;
+    height: 400px;
+    background-color: var(--main-color);
+    border-radius: 100%;
+}
+.why-us .img-layer .img{
+    width: 400px;
+    height: 400px;
+    background: url(img-one-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+    transform: translateX(-35px);
+}
+
+.cards{
+    display: grid ;
+    grid-template-columns: 2fr 2fr;
+}
+
+.card{
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    margin-top: 40px;
+   border-radius: 5px;
+    
+}
+.card.card-fill{
+    background: #e3e8e490;
+    position: relative;
+    
+
+}
+.card.card-fill .star{
+    width: 10px;
+    height: 10px;
+    padding: 15px;
+    border-radius: 100%;
+    background: var(--primary-color);
+    position: absolute;
+    top: -15px;
+    left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: white;
+}
+
+.card h1{
+    color: black;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+.card p{
+    color: #888787;
+    font-family: sans-serif;
+    font-size:12px;
+    margin-top: 20px;
+
+}
+/* WHY CHOOSE US SECTION */
+
+
+/* FEATURES SECTION */
+.features{
+    margin-top:10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center ;
+}
+/* FEATURES SECTION */
+
+/* FOOTER SECTION */
+footer{
+    background: var(--primary-color);
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+footer .logo-container h1{
+    font-size: 4rem;
+    font-family: var(--main-font);
+    margin-bottom: 20px;
+}
+footer .logo-container p{
+    font-family: sans-serif;
+    max-width: 500px;
+    line-height: 25px;
+}
+footer .about-company{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+footer .about-company .container{
+    margin-left: 5rem;
+    margin-top: 20px;
+}
+.about-company .container h1{
+    margin-bottom: 50px;
+}
+.about-company .container p{
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+/* FOOTER SECTION */
+
+
+/* RESPOSIVENESS */
+@media only screen and (max-width:1150px) {
+   .img-container{
+    width: 340px;
+    height: 340px;
+   }
+   .d-none{
+    display: none;
+   }
+    
+}
+
+@media only screen and (max-width:900px) {
+    header{
+        height: 120vh;
+        text-align: center;
+        justify-content: center;
+    }
+    header .content-container{
+        margin-bottom: 6rem;
+        margin-top: 4rem;
+        margin-left: 0;
+    }
+
+    .popularity{
+        margin-top: 22rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    
+    .main-headings{
+        font-size: 3rem;
+        text-align: center;
+       
+    }
+    .primary-headings{
+        width: 350px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .img-container{
+        width:350px ;
+        height:350px ;
+    }
+    .popularity div h1{
+        font-size: 2rem;
+        
+    }
+
+    .popularity div{
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 0 auto;
+        
+    }
+    .d-none{
+        display: none;
+    }
+    .card.card-fill{
+        height: 150px;
+        width: 170px;
+        font-size: 10px;
+        margin-right: 20px;
+    }
+    .why-us .content-container .main-headings{
+        margin-top: 30px;
+        transform: translateX(-15px);
+    }
+    .about-company{
+        font-size: 11px;
+        align-items: center;
+        margin-right: 10px;
+        transform: translate(-25px,-35px);
+
+    }
+}
